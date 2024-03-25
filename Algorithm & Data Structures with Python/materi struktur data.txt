@@ -1,0 +1,102 @@
+Dalam semua bahasa pemorgraman pasti menyediakan defined data types. Tak terkecuali dalam bahasa pemograman Python, terdapat banyak built-in data types seperti integer, string, list, dictionary type, dan masih banyak lagi. Namun semua bahasa pemograman juga menyediakan cara untuk kita sebagai programmer agar bisa mendefinisikan tipe data yang baru. Dalam bahasa pemograman Python kita dapat mendefinisikannya sebagai sebuah class.
+
+Sebelum kita memperdalam pengetahuan kita mengenai tipe-tipe algoritma dan data structure, mari kita mengenal terlebih dahulu secara singkat apa itu algorithm dan data structures
+
+Algorithm mengacu pada step-by-step procedure untuk memecahkan masalah yang diberikan dengan cara yang paling efektif.
+
+Sementara data structures adalah konsep abstrak yang membentuk dan mengatur data agar data di dalam komputer dapat diakses dan diperbarui secara efisien.
+
+Dengan demikian, untuk mendefinisikan sebuah data structures kita memerlukan algorithm yang efisien, dan data structures yang sesuai harus dipilih untuk merancang algorithm yang efisien. Sehingga dapat dikatakan algorithm dan data structures merupakan dua hal yang saling berkaitan.
+
+Pseudocode
+Pseudocode merupakan representasi dari suatu algoritma yang menggunakan bahasa sehari-hari. Pseudocode bisa menjadi awal yang baik untuk mengembangkan algoritma ketika Anda tidak memiliki pengetahuan latar belakang yang cukup tentang pemrograman.
+Pseudocode berperan sebagai jembatan untuk melengkapi flowchart dan kode yang sebenarnya. Ini sering digunakan oleh programmer sebagai pedoman dasar ketika mereka mengimplementasikan kode yang sebenarnya.
+Yang paling penting adalah Anda harus menjelaskan dan merencanakan dengan jelas apa yang harus dilakukan setiap baris kode
+
+Flowchart
+Flowchart mengungkapkan perintah dengan beberapa bentuk standar dan alur kerja menggunakan panah.
+Untuk bentuk dan simbol, menggunakan standar yang ditetapkan oleh Organisasi Internasional untuk Standardisasi (ISO).
+Penting untuk menggambar flowchart dari atas ke bawah dan dari kiri ke kanan tanpa saling tumpang tindih.
+
+Apa itu Struktur Data
+Data Structures atau struktur data adalah teknik khusus untuk mengatur dan menyimpan data di komputer sedemikian rupa sehingga kita dapat melakukan operasi pada data yang disimpan dengan lebih efisien. Data Structures digunakan secara luas dan beragam di seluruh bidang Computer Science dan Software Engineering.
+
+Setiap aplikasi, perangkat lunak, atau fondasi program terdiri dari dua komponen: algoritma dan data. Data adalah informasi, dan algoritma adalah aturan dan instruksi yang mengubah data menjadi sesuatu yang berguna untuk sebuah program.
+
+Terdapat beberapa tipe data structures dalam bahasa pemograman, seperti:
+
+Array
+Array adalah kumpulan item data yang bertipe sama atau beragam, disimpan bersama di lokasi memori yang bersebelahan. Setiap item data dikenal sebagai elemen. Array adalah struktur data yang paling mendasar.
+
+Hash Tables
+Hash Tables, juga disebut hash maps, dapat digunakan sebagai struktur data linier atau nonlinier. Struktur ini biasanya dibangun menggunakan array. Hash Tables memetakan key ke dalam value. Misalnya, setiap buku di perpustakaan memiliki nomor unik yang ditetapkan untuk itu yang memfasilitasi pencarian informasi tentang buku tersebut, seperti siapa yang telah memeriksanya, ketersediaannya saat ini, dll. Buku-buku di perpustakaan di-hash ke nomor yang unik.
+
+Linked List
+Linked list menyimpan koleksi item dalam urutan linier. Setiap elemen dalam linked list berisi item data dan link, atau referensi, ke item berikutnya pada list yang sama.
+
+Stack
+Stack adalah tipe data abstrak di mana item dapat ditambahkan atau dihapus hanya di satu sisi bagian atas. Tipe data ini bekerja dengan metode LIFO (Last-In-First-Out) di mana kita dapat menghapus item terlebih dahulu yang sebelumnya dimasukkan paling terakhir.
+
+Queue
+Queue adalah tipe data abstrak di mana penghapusan data hanya dimungkinkan dari urutan depan/awal dan penambahan hanya dimungkinkan dari urutan belakang. Karena item yang ditambahkan pertama juga dihapus pertama kali, queue adalah data structures yang bekerja dengan metode FIFO (First-In-First-Out).
+
+Dan lain-lain
+Keuntungan menggunakan data structures adalah:
+
+Meningkatkan kecepatan pemrosesan. Data dalam jumlah besar memerlukan pemrosesan yang lebih cepat, dan data structures membantu mengatur data ke dalam bentuk yang lebih mudah untuk dikerjakan dan diproses.
+Memudahkan untuk mencari data. Data structures mengatur informasi ke dalam bentuk yang dapat diterapkan yang lebih mudah untuk melakukan pencarian yang diperlukan.
+Data structures dapat digunakan kembali. Setelah kita menerapkan data structures yang diberikan, itu dapat digunakan di mana saja. Tidak perlu membuat struktur baru. Fungsi ini menghemat waktu dan sumber daya.
+
+Dalam pemrograman komputer, salah satu proses yang paling sering dilakukan adalah menemukan item tertentu dalam data yang diberikan.
+
+Namun terdapat 2 tipe masalah dalam searching algorithm:
+
+Data yang diberikan memiliki aturan
+Data yang diberikan tidak beraturan
+Jika data yang diberikan tidak memiliki aturan, kita perlu memeriksa keseluruhan data. Misalnya, bayangkan masalah untuk menemukan lokasi nilai x dari list S di mana anggota dari list tersebut merupakan bilang bulat yang acak. Bagaimana jika x tidak ada dalam daftar S yang diberikan? Kita tidak akan dapat menemukan lokasi x sampai memeriksa semua elemen di S. Untuk menyelesaikan masalah ini kita dapat menggunakan sequential search.
+
+Namun di sisi lain, jika data yang diberikan memiliki aturan, masalah pencarian dapat diselesaikan dengan lebih mudah dan efisien. Misalnya, jika data yang diberikan adalah urutan terurut, binary search dapat digunakan untuk melakukan pencarian.
+
+Binary Search - Definition
+Binary search merupakan searching algorithm yang melakukan pencarian terhadap suatu list yang tersusun atau bukan list yang acak. Hal ini yang membedakan binary search dengan sequential search yaitu dari tipe list input masing-masing.
+
+Berikut contoh problem untuk binary search:
+
+Terdapat sebuah list S dengan elemen dari list tersebut adalah integer yang sudah diurutkan dan kita ingin mencari apakah sebuah integer x di dalam list tersebut. Mari kita perhatikan kode di bawah sebagai gambaran untuk masalah dan solusi untuk case tersebut. Jika elemen x ada dalam list tersebut maka akan dikembalikan index dari elemen tersebut dalam list S dan jika tidak ditemukan akan mengembalikan -1
+
+Sequential Search - Definition
+Sequential search adalah sebuah algoritma yang melakukan pencarian dengan memeriksa semua item satu per satu secara berurutan. Sequential search dilakukan untuk data yang diberikan secara acak. Jadi, karena pencarian dilakukan tanpa aturan, ini juga disebut finding a needle in a haystack atau mencari jarum dalam tumpukan jerami.
+
+Quick Sort - Concept 1
+Quick sort adalah salah satu tipe dari sorting algorithm yang secara rekursif mengurutkan unsorted list dengan membaginya menjadi dua sublist, sesuai dengan nilai pivot.
+
+Untuk mengenal lebih detail mengenai quick sort, perhatikan ilustrasi di bawah ini:
+
+Misalnya kita ingin mensortir sebuah list dari urutan seperti berikut
+
+Ada beberapa cara untuk kita dapat menentukan elemen yang ingin kita jadikan sebagai pivot:
+
+Selalu pilih first element sebagai pivot (akan kita gunakan sebagai contoh)
+Selalu pilih last element sebagai pivot
+Pilih elemen secara random sebagai pivot
+Mengambil nilai median sebagai pivot
+
+Quick Sort - Concept 2
+Dalam algoritma quick sort, salah satu konsep penting yang perlu kita ketahui adalah bagaimana cara untuk partitioning dengan pivot atau mengetahui value yang lebih kecil atau lebih besar dari pivot.
+
+Hash table atau hash map mengacu pada tipe data abstrak yang menyimpan dan mengekstrak data dengan memetakan sebuah key terhadap sebuah value melalui hashing. Hashing adalah penunjukan lokasi untuk menyimpan data atau menemukan data yang disimpan berdasarkan nilai data. Hash function menentukan kunci dengan menggunakan nilai data.
+
+Dalam hash table, terdapat 3 istilah yang perlu kita pahami yaitu put, get dan hash:
+
+put(key, value) : Menyimpan nilai ke bucket yang ditentukan oleh key hash value
+get(key) : Mengekstrak nilai yang disimpan dalam bucket yang ditentukan oleh key hash value
+hash(key) : Mengonversi key value data menjadi hash value dalam range tertentu
+
+berikut contoh penerapan dari hash table. Kondisi di bawah adalah kita memiliki 5 judul buku :
+
+The Little Prince
+The Old Man and the Sea
+The Little Mermaid
+Beauty and the Beast
+The Last Leaf
+dan akan kita letakkan dalam sebuah rak buku dengan 8 tempat yang tersedia.
